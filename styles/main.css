@@ -494,6 +494,13 @@ footer {
 	color: var(--color-secondary);
 	background-color: rgba(0, 0, 0, 0.9);
 }
+.footer__link {
+	display: inline;
+	text-align: left;float: left;
+}
+.footer__bottom p {
+	display: inline;
+}
 
 /* ------------/footer------------ */
 
@@ -548,7 +555,7 @@ footer {
 	min-height: 40px;
 	border-bottom: 1px solid silver;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 .modal__title {
@@ -567,6 +574,10 @@ footer {
 	line-height: 1.35;
 	font-size: 1.2rem;
 }
+
+
+
+
 .personaldata {
 	padding: 20px 0;
 	border-top: 1px solid silver;
@@ -590,6 +601,41 @@ footer {
 	.personaldata__contacts {
 		justify-content: space-around;
 	}
+}
+
+
+.appeal .form__input {
+	margin: 5px 0;
+}
+
+.appeal label{
+	display: block;
+}
+
+.appeal__fullname {
+}
+.appeal__phone {
+}
+.appeal__email {
+}
+.appeal__text {
+}
+.appeal__file {
+}
+.appeal__file-info, .appeal__agree label {
+	font-size: 13px;
+}
+.appeal__agree {
+	display: flex;
+	align-items: center;
+}
+.appeal__agree input{
+	margin-right: 10px;
+}
+.appeal .btn {
+	margin-top: 15px;
+	width: 100%;
+	justify-content: center;
 }
 
 
