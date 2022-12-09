@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/fonts.css">
+	<link rel="stylesheet" href="styles/vars.css">
+	<link rel="stylesheet" href="styles/nullstyle.css">
+	<link rel="stylesheet" href="styles/bootstrap-grid.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<title>АвтоКэш</title>
+</head>
+<body>
+	<header class="lock-padding">
+		<div class="navbar">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="img/logo.webp" alt="Логотип">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse" id="navbarNav">
+					<a class="nav-link" href="#contacts">Контакты</a>
+					<a class="nav-link" href="#docs">Документы</a>
+					<a class="nav-link" href="#info">Инфо</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="head" id="head">
+			<div class="container">
+				<h1 class="head__title">Официальный сайт ООО МКК «ЕСП АВТОКЭШ»</h1>
+				<h3 class="head__subtitle">По возникшим вопросам обращайтесь по телефону.</h3>
+				<a href="tel:+79999999999" class="btn call__btn">Позвоните нам
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+						<path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+					</svg>
+				</a>
+			</div>
+			<img src="img/headBg.webp" alt="Фоновая картинка" class="bg">
+		</div>
+		<div class="contacts" id="contacts">
+			<h2 class="contacts__title">Контакты</h2>
+			<div class="container">
+				<div class="contacts__item">
+					<h2 class="contact__title">Контакты</h2>
+					<div class="contact">
+						<p class="contact__info">
+							<strong>Место непосредственного ведения деятельности:</strong>
+							115054, г. Москва, муниципальный округ Даниловский, ул. Дубининская, д. 57, стр. 2, помещ. 5Т
+						</p>
+						<p class="contact__info">
+							<strong>Режим работы:</strong>
+							ПН-ПТ - с 09:00 до 18:00,
+							<span>Перерыв - с 13:00 до 14:00</span>
+							СБ, ВС - Выходной
+						</p>
+						<p class="contact__info">
+							<strong>Способы взаимодействия:</strong> 
+							<a href="tel:+79999999999">+7(999)999-99-99</a>
+							<a href="mailto:">pochta@gmail.com</a>
+						</p>
+						
+					</div>
+				</div>
+
+				<div class="contacts__item">
+					<h2 class="contact__title">Мы на карте</h2>
+					<div class="contact map">
+						<script  type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3ec675cf41aec957c7f9f508682ea2b92faee3a0a9c54943a5f8fa7cb8eda16d&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>	
+					</div>
+				</div>
+
+				<div class="contacts__item">
+					<h2 class="contact__title">Экспресс - заявка</h2>
+					<div class="contact">
+						<form action="#" id="expressRequest">
+							<div class="person">
+								<div>
+									<input type="radio" name="person" value="individual" id="individual" checked>
+									<label for="individual">Физическое лицо</label>
+								</div>
+								<div>
+									<input type="radio" name="person" value="entity" id="entity">
+									<label for="entity">Юридическое лицо</label>
+								</div>
+							</div>
+							<div class="about-you">
+								<input type="text" name="name" class="form__input" id="name" placeholder="Ваше имя / Название компании">
+								<input type="text" name="carInfo" class="form__input" id="carInfo" placeholder="Марка, модель, год авто">
+								<input type="tel" name="tel" class="form__input" id="yourTel" placeholder="Ваш телефон">
+							</div>
+							<div class="price">
+								<h3 class="price__title">Желаемая сумма</h3>
+								<input type="number" name="price" class="form__input" id="price" value="1000000">
+							</div>
+							<div class="agreement">
+								<input type="checkbox" name="agreement" id="agreement">
+								<label for="agreement">
+									Проставляя галочку и нажимая на кнопку "Отправить заявку" даю <a href="docs/Согласие на обработку персональных данных.pdf" target="_blank">Согласие на обработку персональных данных</a>
+								</label>
+							</div>
+							<button type="submit" class="btn btn-submit">Отправить заявку</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="docs" id="docs">
+			<h2 class="docs__title">Документы</h2>
+			<div class="container">
+				<div class="docs__accordion">
+					<div class="doc">
+						<h3 class="doc__title">Документы и раскрытие информации ООО МКК "ЕСП АВТОКЭШ"
+							<svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+							</svg>
+						</h3>
+						<div class="doc__list" style="height:0">
+							<a href="#">Документ Документ Документ Документ Документ Документ </a>
+							<a href="#">Документ</a>
+						</div>
+					</div>
+					<div class="doc">
+						<h3 class="doc__title">Документы и раскрытие информации ООО МКК "ЕСП АВТОКЭШ"
+							<svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+							</svg>
+						</h3>
+						<div class="doc__list" style="height:0">
+							<a href="#">Документ</a>
+						</div>
+					</div>
+					<div class="doc">
+						<h3 class="doc__title">Документы и раскрытие информации ООО МКК "ЕСП АВТОКЭШ"
+							<svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+							</svg>
+						</h3>
+						<div class="doc__list" style="height:0">
+							<a href="#">Документ</a>
+						</div>
+					</div>
+				</div>
+				<div class="docs__accordion">
+					<div class="doc">
+						<h3 class="doc__title">Документы и раскрытие информации ООО МКК "ЕСП АВТОКЭШ"
+							<svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+							</svg>
+						</h3>
+						<div class="doc__list" style="height:0">
+							<a href="#">Документ</a>
+						</div>
+					</div>
+					<div class="doc">
+						<h3 class="doc__title">Документы и раскрытие информации ООО МКК "ЕСП АВТОКЭШ"
+							<svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+							</svg>
+						</h3>
+						<div class="doc__list" style="height:0">
+							<a href="#">Документ</a>
+						</div>
+					</div>
+					<div class="doc">
+						<h3 class="doc__title">Документы и раскрытие информации ООО МКК "ЕСП АВТОКЭШ"
+							<svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+							</svg>
+						</h3>
+						<div class="doc__list" style="height:0">
+							<a href="#">Документ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="info" id="info">
+			<h2 class="info__title">Информация</h2>
+			<div class="container wrapper">
+				<div class="infoblock">
+					<p>Персональный состав органов управления:
+						Лицо, осуществляющее функции единоличного исполнительного органа
+						(Генеральный директор) -
+						Козаченко Алексей Евгеньевич
+						Дата назначения - 15.07.2020</p>
+				</div>
+				<div class="infoblock">
+					<p>Общество с ограниченной ответственностью
+						Микрокредитная компания "ЕСП АвтоКэш"
+						(ООО МКК «ЕСП АвтоКэш»)
+						ОГРН: 1157746237472, ИНН 7725266466,
+						Регистрационный номер в государственном реестре
+						микрофинансовых организаций: 2103045009684,
+						Дата внесения сведений о юридическом лице в
+						государственный реестр микрофинансовых организаций: 07.06.2021
+						Юридический адрес: 115054, г. Москва,
+						муниципальный округ Даниловский,
+						ул. Дубининская, д. 57, стр. 2, помещ. 5Т</p>
+				</div>
+				<div class="infoblock">
+					<p>ООО МКК «ЕСП АвтоКэш»
+						является членом СРО в сфере МФО —
+						Союз «Микрофинансовый Альянс
+						«Институты развития малого и среднего бизнеса»
+						(запись в реестре под № 12 21 030 45 1552),
+						Дата вступления в СРО: 02.12.2021
+						Адрес (мест нахождения) СРО:
+						127055, Москва г, ул. Сущёвская, д.21, офис 513
+						Адрес официального сайта СРО: 
+						Адрес электронной почты: 
+						Форма для подачи обращений (жалоб) в СРО: </p>
+				</div>
+				<div class="infoblock">
+					<p>
+						<a href="https://cbr.ru/Reception/" target="_blank">Интернет-приемная Банка России</a>
+						Ссылка на официальный сайт Банка России, в т.ч. государственный реестр МФО
+						Карточка ООО МКК «ЕСП АвтоКэш»
+						на сайте Банка России
+					</p>
+				</div>
+			</div>
+			<div class="container additional-info">
+				<p>В соответствии со статьями 15-19 Федерального закона от 4 июня 2018 года N 123-ФЗ
+					"Об уполномоченном по правам потребителей финансовых услуг"
+					Потребитель финансовых услуг вправе направить обращение финансовому уполномоченному
+					Финансовый уполномоченный:
+					Официальный сайт: https://finombudsman.ru/
+					Место нахождения, почтовый адрес: 119017, г. Москва, Старомонетный пер., дом 3
+					Контактный центр: 8 (800) 200-00-10, понедельник - пятница с 8:00 до 20:00 (МСК),
+					кроме нерабочих праздничных дней бесплатный звонок из регионов России
+					Подробная информация о порядке рассмотрения обращений размещена в разделе
+					"ИНФОРМАЦИЯ О ПРАВЕ ПОТРЕБИТЕЛЯ НА ОБРАЩЕНИЕ К ФИНАНСОВОМУ УПОЛНОМОЧЕННОМУ"</p>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer__info">
+			<!-- <a href="#SBP" class="footer__sbp popup-link">Система быстрых платежей</a> -->
+			<div class="footer__info-information">
+				<p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Буквенных строчка выйти но взгляд толку повстречался буквоград последний сих?</p>
+				<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текст переулка языком власти. Своего языкового снова буквоград составитель всемогущая строчка lorem своих, знаках за однажды рукописи рыбными собрал эта лучше последний, текст напоивший. Даль единственное толку рукописи деревни текстов журчит первую оксмокс рукопись языком моей, злых своего не. Текстами вдали ты знаках жаренные большой до проектах безорфографичный всемогущая то ipsum единственное страна, путь пояс маленький взобравшись, это заманивший выйти власти, рекламных диких. Что напоивший прямо живет эта буквоград путь о наш если обеспечивает. Инициал пустился это своих маленькая точках однажды семантика там необходимыми строчка свой! Родного вопроса даль великий!</p>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<p>&copy; 2022</p>
+		</div>
+	</footer>
+
+
+
+	<!-- <div class="modal active" id="appeal">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<div class="modal__header">
+					<h4 class="modal__title">Обращение</h4>
+					<button class="modal__close" type="button">
+						<svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px" class="modal__close-icon">
+							<path d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z"/>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__body">
+					
+				</div>
+				<div class="modal__footer">
+					
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+
+	<script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+:root {
+	--color-primary: #000;
+	--color-secondary: #fff;
+	
+
+	/* Шрифты */
+	--font-Nunito: "Nunito";
+	--font-Roboto: "Roboto";
+}
