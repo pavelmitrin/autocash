@@ -495,6 +495,7 @@ footer {
 	background-color: rgba(0, 0, 0, 0.9);
 }
 .footer__link {
+	color: var(--color-secondary);
 	display: inline;
 	text-align: left;float: left;
 }
